@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from './style.module.scss'
 
-export default function SubscribeButton() {
+interface typeSubscribeButton {
+    priceId: string;
+}
+
+export default function SubscribeButton({ priceId }: typeSubscribeButton) {
     return (
         <button
             type="button"
